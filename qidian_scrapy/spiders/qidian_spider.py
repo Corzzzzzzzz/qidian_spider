@@ -7,13 +7,13 @@ from scrapy.http.response.html import HtmlResponse
 from ..items import ArticleItem, PageItem, ErrorItem
 from fontTools.ttLib import TTFont
 import time
-from io import BytesIO  #StringIO就是在内存中创建的file-like Object，常用作临时缓冲
+from io import BytesIO 
 
 
 class QidianSpiderSpider(scrapy.Spider):
     name = 'qidian_spider'
     allowed_domains = ['qidian.com']
-    start_urls = ['https://www.qidian.com/all?orderId=&style=1&pageSize=20&siteid=1&pubflag=0&hiddenField=0&page=5657']
+    start_urls = ['https://www.qidian.com/all']
     transfer_index = {
         'zero': '0',
         'one': '1',
