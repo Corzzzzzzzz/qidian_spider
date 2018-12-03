@@ -15,8 +15,8 @@ class QidianScrapyPipeline(object):
     def __init__(self):
         sql_args = {
             'host': '127.0.0.1',
-            'user': 'root',
-            'password': 'Reborn@@cjb',
+            'user': 'your MySQL user',
+            'password': 'your MySQL user',
             'port': 3306,
             'database': 'qidian',
             'charset': 'utf8',
